@@ -1,0 +1,207 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif; 
+  background-color: lightblue; 
+  color: #333333; 
+  margin: 1;
+  padding: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 12px;
+}
+
+tr, th, td {
+  border: 1px solid black; 
+}
+
+th {
+  background-color: beige; 
+  color: black; 
+  padding: 12px;
+  text-align: left; 
+}
+
+td {
+  padding: 12px;
+  text-align: left; 
+  background-color: white; 
+}
+
+.app-nav a {
+  padding: 0px 20px 5px 20px;
+  background-color:blue;
+  text-decoration:none;
+  color:white;
+  line-height:1;
+  vertical-align:middle;
+  border: 2px solid white;
+  font-size:1.3em;
+  font-weight:bold;
+  border-radius:3px;
+}
+
+input[type="number"], input[type="text"], select {
+  font-family: 'Arial', sans-serif; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+button {
+  font-family: 'Arial', sans-serif; 
+  background-color: #28a745; 
+  color: white;
+  border: none; 
+  width: 100%; 
+  padding: 12px;
+  border-radius: 4px; 
+}
+
+.tooltip-box {
+  position: fixed;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Lyrics Popup */
+.lyrics-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  z-index: 1001;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.lyrics-popup h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.lyrics-content {
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.lyrics-popup button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.lyrics-popup button:hover {
+  background-color: #2980b9;
+}
+
+/* Artist Info Popup */
+.artist-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  z-index: 1001;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.artist-popup h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.artist-popup h4 {
+  margin-top: 20px;
+}
+
+.artist-popup p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.artist-popup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.artist-popup li {
+  font-size: 16px;
+  color: #3498db;
+  margin-bottom: 5px;
+}
+
+.artist-popup button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.artist-popup button:hover {
+  background-color: #2980b9;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
